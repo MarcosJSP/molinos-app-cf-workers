@@ -4,7 +4,6 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "molinos-app-cf-workers",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-10",
 	"observability": {
@@ -12,7 +11,10 @@
 	},
 	"env": {
 		"dev": {
-			"route": "dev.molinos-app-cf-workers.marcosjsp-ia.workers.dev"
+			"name": "molinos-app-cf-workers-dev"
+		},
+		"prod": {
+			"name": "molinos-app-cf-workers"
 		}
 	}
 	/**
