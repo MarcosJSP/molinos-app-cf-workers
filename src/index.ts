@@ -13,6 +13,11 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response(JSON.stringify(request.headers));
+		let result = 'url: ' + request.url + '\n';
+		for (const header of request.headers) {
+			result += 'header: ' + header + '\n';
+		}
+
+		return new Response(result);
 	},
 } satisfies ExportedHandler<Env>;
