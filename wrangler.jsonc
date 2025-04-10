@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "molinos-app-workers",
+	"name": "molinos-app-cf-workers",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-10",
 	"observability": {
